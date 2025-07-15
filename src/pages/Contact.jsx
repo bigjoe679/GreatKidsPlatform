@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import Footer from '../components/Footer';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,7 +10,7 @@ const Contact = () => {
   });
 
   const handleChange = (e) => {
-    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = (e) => {
@@ -22,10 +22,10 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-blue-50 flex flex-col w-full overflow-x-hidden">
       <motion.div
-        className="w-full px-4 sm:px-8 md:px-12 lg:px-0 max-w-3xl mx-auto mt-12 bg-white rounded-lg shadow-lg"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
+        className="w-full px-4 sm:px-8 md:px-12 lg:px-0 max-w-3xl mx-auto mt-12 bg-white rounded-lg shadow-lg"
       >
         <div className="p-8">
           <h1 className="text-4xl font-bold text-blue-700 mb-6 text-center">Contact Us</h1>

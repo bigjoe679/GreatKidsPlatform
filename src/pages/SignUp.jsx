@@ -4,7 +4,7 @@ import { auth } from '../firebase';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../components/Footer';
 
-const SignUp = () => {
+const Signup = () => {
   const [formData, setFormData] = useState({
     fullName: '',
     address: '',
@@ -159,4 +159,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Signup;
